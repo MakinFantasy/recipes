@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: rgb(134, 121, 121);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h1 {
+            color: rgba(20, 213, 247, 0.705);
+            font-family: fantasy;
+        }
+        a {
+            color: rgb(26, 218, 106);
+            font-family:  fantasy;
+        }
+    </style>
+    <title>
+        Home page
+    </title>
+</head>
+<body>
+    <h1>Выберите рецепт</h1>
+    {% for title, url in pages.items %}
+        <a href="{{ url }}"> {{ title }}</a>
+        <br>
+    {% endfor %} 
+</body>
+</html>
